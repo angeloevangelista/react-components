@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from 'react';
 
-import { Button } from '../../Example';
+import { Button } from '@components/Example';
 
 import './styles.css';
 

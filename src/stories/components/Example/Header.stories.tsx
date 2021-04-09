@@ -6,6 +6,6 @@ export default {
   title: 'Example/Header',
 };
 
-export const LoggedIn = () => <Header isLogged />;
+export const LoggedIn = (): JSX.Element => <Header isLogged />;
 
-export const LoggedOut = () => <Header />;
+export const LoggedOut = (): JSX.Element => <Header />;

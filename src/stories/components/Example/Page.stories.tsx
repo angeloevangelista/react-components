@@ -6,6 +6,6 @@ export default {
   title: 'Example/Page',
 };
 
-export const LoggedIn = () => <Page />;
+export const LoggedIn = (): JSX.Element => <Page />;
 
-export const LoggedOut = () => <Page isLogged />;
+export const LoggedOut = (): JSX.Element => <Page isLogged />;
