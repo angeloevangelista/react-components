@@ -98,4 +98,4 @@ Page.defaultProps = {
   isLogged: false,
 };
 
-export default Page;
+export { Page };

@@ -1,3 +1,3 @@
-export { default as Button } from './Button';
-export { default as Header } from './Header';
-export { default as Page } from './Page';
+export { Button } from './Button';
+export { Header } from './Header';
+export { Page } from './Page';

@@ -13,12 +13,12 @@
     "jsx": "react",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
-      "@root/*": ["./*"],
+      "@root/*": ["./"],
       "@components/*": ["./components/*"]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["./src/**/*"],
   "exclude": ["node_modules", "build"]
 }

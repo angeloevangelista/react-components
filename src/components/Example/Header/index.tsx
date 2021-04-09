@@ -66,4 +66,4 @@ Header.defaultProps = {
   isLogged: false,
 };
 
-export default Header;
+export { Header };

@@ -1,3 +1,1 @@
-import * as Example from './components/Example';
-
-export { Example };
+export { Button, Header, Page } from './components/Example';
