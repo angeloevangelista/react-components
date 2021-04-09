@@ -25,5 +25,13 @@
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
     "import/no-unresolved": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ]
 }
