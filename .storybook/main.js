@@ -14,6 +14,18 @@ module.exports = {
       loader: require.resolve('ts-loader'),
     });
 
+    config.module.rules.push({
+      test: /\.scss$/,
+      include: [
+        path.resolve(__dirname, '../src'),
+      ],
+      loaders: [
+        require.resolve('style-loader'),
+        require.resolve('css-loader'),
+        require.resolve('sass-loader')
+      ]
+    });
+
     config.resolve.plugins = config.resolve.plugins || [];
 
     config.resolve.plugins.push(
