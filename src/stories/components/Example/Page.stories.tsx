@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Page } from '../../../src';
+import { Page } from '@root';
 
 export default {
   title: 'Example/Page',

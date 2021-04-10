@@ -1,6 +1,6 @@
 import React, { MouseEventHandler } from 'react';
 
-import { Header } from '@components/Example';
+import { Header } from '@components/Example/Header';
 
 import './styles.css';
 

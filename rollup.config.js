@@ -1,8 +1,8 @@
+import postcss from 'rollup-plugin-postcss'
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
-import postcss from 'rollup-plugin-postcss'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 import packageJson from './package.json';
 
@@ -21,12 +21,12 @@ export default {
     }
   ],
   plugins: [
-    peerDepsExternal(),
-    resolve(),
     commonjs(),
     typescript(),
+    peerDepsExternal(),
+    resolve(),
     postcss({
       plugins: []
     })
-  ]
+  ],
 };

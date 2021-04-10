@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Header } from '../../../src';
+import { Header } from '@root';
 
 export default {
   title: 'Example/Header',

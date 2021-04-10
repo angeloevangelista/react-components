@@ -1,0 +1,25 @@
+enum EBackgroundType {
+  crosses = 'crosses',
+  jupiter = 'jupiter',
+  piano = 'piano',
+  dominos = 'dominos',
+  pie = 'pie',
+  bees = 'bees',
+  food = 'food',
+  floor = 'floor',
+  wiggle = 'wiggle',
+  bars = 'bars',
+  bubbles = 'bubbles',
+  ticTac = 'ticTac',
+  zigZag = 'zigZag',
+  stripes = 'stripes',
+  clouds = 'clouds',
+  aztec = 'aztec',
+  circuit = 'circuit',
+  dots = 'dots',
+  lines = 'lines',
+  leaf = 'leaf',
+  overlap = 'overlap',
+}
+
+export { EBackgroundType };
