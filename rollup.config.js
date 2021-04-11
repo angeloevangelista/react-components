@@ -1,7 +1,8 @@
+import ttypescript from 'ttypescript'
 import postcss from 'rollup-plugin-postcss'
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript2';
+import typescript2 from 'rollup-plugin-typescript2';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 import packageJson from './package.json';
@@ -22,7 +23,22 @@ export default {
   ],
   plugins: [
     commonjs(),
-    typescript(),
+    typescript2({
+      typescript: ttypescript,
+      tsconfigDefaults: {
+        compilerOptions: {
+          plugins: [
+            {
+              "transform": "typescript-transform-paths"
+            },
+            {
+              "transform": "typescript-transform-paths",
+              "afterDeclarations": true
+            }
+          ]
+        }
+      }
+    }),
     peerDepsExternal(),
     resolve(),
     postcss({

@@ -21,7 +21,13 @@
       "@typings/*": ["./typings/*"]
     },
     "types": ["node"],
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "plugins": [
+      {
+        "transform": "@zerollup/ts-transform-paths",
+        "exclude": ["*"]
+      }
+    ]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "build"]
