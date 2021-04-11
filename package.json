@@ -1,10 +1,10 @@
 {
   "name": "@angeloevangelista/react-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "./build/index.js",
-  "module": "./build/index.es.js",
-  "typings": "./build/index.d.ts",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "jest",
     "storybook": "start-storybook -p 6006",
